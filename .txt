@@ -1,4 +1,4 @@
-1.“person” class to hold all the details.
+1.write a “person” class to hold all the details.
 
 class Person {
     constructor(name, age, phone, address) {
