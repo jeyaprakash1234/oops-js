@@ -1,0 +1,43 @@
+1.“person” class to hold all the details.
+
+class Person {
+    constructor(name, age, phone, address) {
+        this.name = jp;
+        this.age = 20;
+        this.phone = 123144242;
+        this.address = asdvsa;
+    }
+
+    // Method to display person's details
+    getDetails() {
+        return `Name: ${this.name}, Age: ${this.age}, Phone: ${this.phone}, Address: ${this.address}`;
+    }
+}
+
+2.write a class to calculate the Uber price.
+
+class Uber {
+    constructor(distance, ratePerKm) {
+        this.distance = distance; // Distance in kilometers
+        this.ratePerKm = ratePerKm; // Rate per kilometer
+    }
+
+    // Method to calculate the total fare
+    calculateFare() {
+        const baseFare = 50; // Base fare (can be adjusted)
+        const fare = baseFare + this.distance * this.ratePerKm;
+        return `The total fare is ₹${fare.toFixed(2)}`;
+    }
+}
+
+// Example usage:
+
+// Create a new person
+const person1 = new Person("Jeyaprakash", 30, "1231412413", "123, Main Street, Chennai");
+
+// Display person's details
+console.log(person1.getDetails());
+
+// Calculate Uber fare
+const uberRide = new Uber(10, 15); // 10 kilometers, ₹15 per kilometer
+console.log(uberRide.calculateFare());
